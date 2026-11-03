@@ -15,7 +15,7 @@ class PesananLaundryController extends Controller
         try {
             $query = PesananLaundry::with('jenisLayanan');
 
-            // Pencarian berdasarkan kode, nama, atau nomor telepon.
+            // Pencarian atau filter berdasarkan kode, nama, atau nomor telepon.
             if ($request->filled('search')) {
                 $search = trim($request->input('search'));
 
@@ -55,6 +55,8 @@ class PesananLaundryController extends Controller
         }
     }
 
+
+    //CREATE PESANAN LAUNDRY
     public function create()
     {
         try {
@@ -71,6 +73,8 @@ class PesananLaundryController extends Controller
         }
     }
 
+
+    //STORE PESANAN LAUNDRY
     public function store(Request $request)
     {
         try {
@@ -136,6 +140,8 @@ class PesananLaundryController extends Controller
         }
     }
 
+
+    //DISPLAY DETAIL PESANAN LAUNDRY
     public function show(PesananLaundry $pesanan_laundry)
     {
         try {
@@ -154,6 +160,8 @@ class PesananLaundryController extends Controller
         }
     }
 
+
+    //EDIT PESANAN LAUNDRY
     public function edit(PesananLaundry $pesanan_laundry)
     {
         try {
@@ -173,6 +181,8 @@ class PesananLaundryController extends Controller
         }
     }
 
+
+    //UPDATE PESANAN LAUNDRY
     public function update(
         Request $request,
         PesananLaundry $pesanan_laundry
@@ -242,6 +252,8 @@ class PesananLaundryController extends Controller
         }
     }
 
+
+    //DELETE PESANAN LAUNDRY
     public function destroy(PesananLaundry $pesanan_laundry)
     {
         try {
