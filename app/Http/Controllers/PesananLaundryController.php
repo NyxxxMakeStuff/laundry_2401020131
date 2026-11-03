@@ -45,15 +45,7 @@ class PesananLaundryController extends Controller
                 'jenisLayanan'
             ));
 
-        } catch (\Throwable $e) {
-            report($e);
-
-            return back()->with(
-                'error',
-                'Gagal mengambil data pesanan. Silakan coba lagi.'
-            );
-        }
-    }
+        } 
 
 
     //CREATE PESANAN LAUNDRY
