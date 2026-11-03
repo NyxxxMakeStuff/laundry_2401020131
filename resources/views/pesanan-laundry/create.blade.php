@@ -2,6 +2,7 @@
 
 @section('title', 'Tambah Pesanan')
 
+
 @section('content')
 <div class="card">
     <div class="card-header">Tambah Pesanan Laundry</div>

@@ -8,6 +8,7 @@
 </head>
 <body>
 
+
     <h1>Sistem Pesanan Laundry</h1>
 
     @if (session('success'))
